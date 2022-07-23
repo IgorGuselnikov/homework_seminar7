@@ -30,7 +30,7 @@ int numberRows = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите номер столбца элемента массива:");
 int numberColoumns = int.Parse(Console.ReadLine());
 
-if (numberRows >= 0 && numberRows <= matrix.GetLength(0) && numberColoumns >= 0 && numberColoumns <= matrix.GetLength(1))
+if (numberRows >= 0 && numberRows < matrix.GetLength(0) && numberColoumns >= 0 && numberColoumns < matrix.GetLength(1))
 {
     Console.Write($"Запрашиваемый элемент массива: {matrix[numberRows, numberColoumns]}");
 }
